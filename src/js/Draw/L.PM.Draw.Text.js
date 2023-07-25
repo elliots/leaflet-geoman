@@ -115,9 +115,9 @@ Draw.Text = Draw.extend({
       return;
     }
 
-    // If snap finish is required but the last marker wasn't snapped, do not finish the shape!
+    // If snap is required but the last marker wasn't snapped, do not finish the shape!
     if (
-      this.options.requireSnapToFinish &&
+      (this.options.requireSnap || this.options.requireSnapToFinish) &&
       !this._hintMarker._snapped &&
       !this._isFirstLayer()
     ) {

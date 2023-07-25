@@ -1051,7 +1051,10 @@ declare module 'leaflet' {
       /** Allow snapping between two vertices. (default: true)*/
       snapSegment?: boolean;
 
-      /** Require the last point of a shape to be snapped. (default: false). */
+      /** Require all points of a shape to be snapped (default: false). */
+      requireSnap?: boolean;
+
+      /** Require just the last point of a shape to be snapped. (default: false). */
       requireSnapToFinish?: boolean;
 
       /** Show helpful tooltips for your user (default:true). */

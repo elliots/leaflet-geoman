@@ -31,6 +31,7 @@ const Draw = L.Class.extend({
     markerEditable: true,
     continueDrawing: false,
     snapSegment: true,
+    requireSnap: false,
     requireSnapToFinish: false,
   },
   setOptions(options) {
