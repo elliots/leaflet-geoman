@@ -86,5 +86,13 @@
     "tabWidth": 2,
     "semi": true,
     "singleQuote": true
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./dist/leaflet-geoman.css": "./dist/leaflet-geoman.css",
+    ".": {
+      "types": "./dist/leaflet-geoman.d.ts",
+      "import": "./dist/leaflet-geoman.min.js"
+    }
   }
 }
